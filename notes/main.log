@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2018 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 JAN 2018 17:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,15 +792,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./meeting-joao-tzuo.tex) (./meeting-1.tex [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]) [3
-] (./main.aux) )
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]) (.
+/meeting-2.tex [3] [4]) [5]
+(./main.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11280 strings out of 493014
- 203761 string characters out of 6133351
+ 11283 strings out of 493014
+ 203798 string characters out of 6133351
  246936 words of memory out of 5000000
  14718 multiletter control sequences out of 15000+600000
  9502 words of font info for 36 fonts, out of 8000000 for 9000
@@ -810,10 +811,10 @@ Here is how much of TeX's memory you used:
 /cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr17.pfb>
-Output written on main.pdf (3 pages, 48092 bytes).
+Output written on main.pdf (5 pages, 56632 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
