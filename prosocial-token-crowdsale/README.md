@@ -1,4 +1,4 @@
-# Introducing a decentralized, transparent Social Currency based on Ethereum Blockchain. #
+# Introducing a decentralized, transparent social currency based on Ethereum Blockchain. #
 
 ## Problem: ##
 
