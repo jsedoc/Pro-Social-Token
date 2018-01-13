@@ -1,1 +1,0 @@
-## Prosocial Currency White Paper
