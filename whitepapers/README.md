@@ -1,1 +1,0 @@
-## Some example white papers for reference
