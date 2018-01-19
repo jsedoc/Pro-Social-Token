@@ -4,8 +4,6 @@
     @date: 1/19/2018
     @Use: npm run grunt
           npm start
-
-          starts the server with http
 */
 "use strict";
 
@@ -23,14 +21,13 @@ var app    = server.Server.bootstrap().app;
 app.set('port', httpPort)
 var server = http.Server(app);
 
-// start listening on port `httpPort`
-server.listen(httpPort);
-
-
 /**
-  @Debug: comment out before launch
+  @Debug: hard coded router, comment out before deploying
 */
 app.get('/debug', (req,res) => { res.send("hello world from www") });
+
+// start listening on port `httpPort`
+server.listen(httpPort);
 
 // handle error
 server.on("error", (err) => {
