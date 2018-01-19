@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "SET NODE_ENV=development && nodemon ./bin/www",
+    "dev": "SET NODE_ENV=development && nodemon ./bin/www.js",
     "grunt": "grunt",
     "start": "node ./bin/www"
   },

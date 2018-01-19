@@ -11,9 +11,6 @@ import * as path         from "path"   ;
 import errorHandler   = require("errorhandler")   ;
 import methodOverride = require("method-override");
 
-import { IndexRoute } from '../routes/index';
-
-
 /**
  *  
  * A server class
@@ -46,6 +43,8 @@ export class Server {
     constructor(){
 
         this.app    = express();
+
+        // configure the application
         this.config();
         // this.routes();
         // this.api();
