@@ -21,11 +21,6 @@ var app    = server.Server.bootstrap().app;
 app.set('port', httpPort)
 var server = http.Server(app);
 
-/**
-  @Debug: hard coded router, comment out before deploying
-*/
-app.get('/debug', (req,res) => { res.send("hello world from www") });
-
 // start listening on port `httpPort`
 server.listen(httpPort);
 

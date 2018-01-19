@@ -15,7 +15,7 @@ class Server {
     constructor() {
         this.app = express();
         this.config();
-        this.routes();
+        this.app.use('/', index_1.default);
     }
     config() {
         this.app.use(express.static(path.join(__dirname, "public")));
@@ -33,9 +33,6 @@ class Server {
             next(err);
         });
         this.app.use(errorHandler());
-    }
-    routes() {
-        this.app.use('/', index_1.default);
     }
 }
 exports.Server = Server;

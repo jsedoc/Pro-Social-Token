@@ -16,6 +16,12 @@ index.get('/', (req, res, next) => {
 
 });
 
+index.get('/sigmajs-example', (req, res, next) => {
+
+	res.send("hello world from graph")
+	console.log("navigated to graph page")
+
+});
 
 
 export default index;
