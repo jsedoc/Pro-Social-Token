@@ -46,7 +46,6 @@ export class Server {
     constructor(){
 
         this.app    = express();
-
         this.config();
         // this.routes();
         // this.api();
@@ -114,7 +113,7 @@ export class Server {
      * 
      * @class Server
      * @method api
-     * @todo: implement this
+     * @todo: implement this, the question here is how do you add routes to new pages
      *
     */
     // private routes(){
