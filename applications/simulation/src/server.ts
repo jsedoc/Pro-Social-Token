@@ -13,7 +13,7 @@ import methodOverride = require("method-override");
 
 
 /**
- * 	
+ *  
  * A server class
  * @class Server
  *
@@ -21,64 +21,64 @@ import methodOverride = require("method-override");
 export class Server {
 
 
-	public app : express.Application;
+    public app : express.Application;
 
-	/**
-	 * 
-	 * @class Server
-	 * @method boostrap
-	 * @static 
+    /**
+     * 
+     * @class Server
+     * @method boostrap
+     * @static 
      * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
      *
-	*/
+    */
 
-	public static boostrap() : Server {
+    public static boostrap() : Server {
 
-		return new Server();
-	}
+        return new Server();
+    }
 
-	/**
-	 * constructor
-	 * 
-	 * @class Server
+    /**
+     * constructor
+     * 
+     * @class Server
      * @constructor
      *
-	*/
-	constructor(){
+    */
+    constructor(){
 
-		this.app    = express();
-		this.config = config();
-		this.routes = routes();
-		this.api();
-	}
+        this.app    = express();
+        this.config = config();
+        this.routes = routes();
+        this.api();
+    }
 
 
-	/**
-	 * create RESTI API routes
-	 * 
-	 * @class Server
+    /**
+     * create RESTI API routes
+     * 
+     * @class Server
      * @method api
      * @todo: implement this
      *
-	*/
-	public api() : Bool {
+    */
+    public api() : Bool {
 
-		return false
+        return false
 
-	}
+    }
 
 
-	/**
-	 * creat router
-	 * 
-	 * @class Server
+    /**
+     * creat router
+     * 
+     * @class Server
      * @method api
      * @todo: implement this
      *
-	*/
-	public routes(){
+    */
+    public routes(){
 
-	}
+    }
 
 }
 
