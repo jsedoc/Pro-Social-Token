@@ -20,7 +20,6 @@ import methodOverride = require("method-override");
 */
 export class Server {
 
-
     public app : express.Application;
 
     /**
@@ -31,7 +30,6 @@ export class Server {
      * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
      *
     */
-
     public static bootstrap() : Server {
         return new Server();
     }

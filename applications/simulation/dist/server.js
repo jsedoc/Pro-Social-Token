@@ -8,7 +8,7 @@ const path = require("path");
 const errorHandler = require("errorhandler");
 const methodOverride = require("method-override");
 class Server {
-    static boostrap() {
+    static bootstrap() {
         return new Server();
     }
     constructor() {

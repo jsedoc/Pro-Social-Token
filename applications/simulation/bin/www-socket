@@ -1,5 +1,5 @@
 /**
-    @file: www
+    @file: www-socket
     @author: Xiao Ling <lingxiao@seas.upenn.edu>
     @date: 1/19/2018
     @Use: npm run grunt

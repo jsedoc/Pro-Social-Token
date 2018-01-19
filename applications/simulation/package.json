@@ -30,7 +30,8 @@
     "grunt": "^1.0.1",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
@@ -38,6 +39,7 @@
     "@types/errorhandler": "0.0.32",
     "@types/method-override": "0.0.31",
     "@types/morgan": "^1.7.35",
+    "@types/socket.io": "^1.4.31",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.17",
