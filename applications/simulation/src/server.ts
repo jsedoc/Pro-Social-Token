@@ -33,7 +33,6 @@ export class Server {
     */
 
     public static boostrap() : Server {
-
         return new Server();
     }
 
@@ -47,38 +46,83 @@ export class Server {
     constructor(){
 
         this.app    = express();
-        this.config = config();
-        this.routes = routes();
-        this.api();
+
+        this.config();
+        // this.routes();
+        // this.api();
     }
 
 
     /**
-     * create RESTI API routes
+     * configure the app
+     * 
+     * @class Server
+     * @method config
+     *
+    */
+    public config() {
+
+        // add all static paths
+        this.app.use(express.static(path.join(__dirname, "public")));
+
+        // configure pug
+        this.app.set("views", path.join(__dirname, "views"));
+        this.app.set("view engine", "pug");
+
+        // use logger middlware
+        this.app.use(logger("dev"));
+
+        // use json form parser middleware
+        this.app.use(bodyParser.json());
+
+        // use query string parser middlware
+        this.app.use(bodyParser.urlencoded({
+            extended : true
+        }));
+
+        // use cookie parser middleware
+        this.app.use(cookieParser("SECRETE_CODE"))
+
+        // use overide middleware
+        this.app.use(methodOverride());
+
+        // catch 404 and forward to handler
+        this.app.use(function( err: any
+                             , req: express.Request
+                             , res: express.Response
+                             , next: express.NextFunction) {
+          err.status = 404;
+          next(err);
+
+        });
+
+        // error handling
+        this.app.use(errorHandler());
+    }
+
+
+    /**
+     * create REST API routes
      * 
      * @class Server
      * @method api
      * @todo: implement this
      *
     */
-    public api() : Bool {
+    // public api() {}
 
-        return false
 
-    }
 
 
     /**
-     * creat router
+     * create router
      * 
      * @class Server
      * @method api
      * @todo: implement this
      *
     */
-    public routes(){
-
-    }
+    // public routes(){}
 
 }
 
