@@ -11,6 +11,8 @@ import * as path         from "path"   ;
 import errorHandler   = require("errorhandler")   ;
 import methodOverride = require("method-override");
 
+import index from './routes/index';
+
 /**
  *  
  * A server class
@@ -42,11 +44,12 @@ export class Server {
     */
     constructor(){
 
-        this.app    = express();
+        this.app = express();
 
         // configure the application
         this.config();
-        // this.routes();
+        this.app.use('/', index);
+
         // this.api();
     }
 
@@ -107,20 +110,6 @@ export class Server {
     */
     // public api() {}
 
-    /**
-     * create router
-     * 
-     * @class Server
-     * @method api
-     * @todo: implement this, the question here is how do you add routes to new pages
-     *
-    */
-    // private routes(){
-    //     let router : express.Router;
-    //     router = express.Router();
-    //     // index route
-    //     IndexRoute.create(router);
-    // }
 
 }
 

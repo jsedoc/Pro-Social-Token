@@ -7,6 +7,7 @@ const logger = require("morgan");
 const path = require("path");
 const errorHandler = require("errorhandler");
 const methodOverride = require("method-override");
+const index_1 = require("./routes/index");
 class Server {
     static bootstrap() {
         return new Server();
@@ -14,6 +15,7 @@ class Server {
     constructor() {
         this.app = express();
         this.config();
+        this.routes();
     }
     config() {
         this.app.use(express.static(path.join(__dirname, "public")));
@@ -31,6 +33,9 @@ class Server {
             next(err);
         });
         this.app.use(errorHandler());
+    }
+    routes() {
+        this.app.use('/', index_1.default);
     }
 }
 exports.Server = Server;
