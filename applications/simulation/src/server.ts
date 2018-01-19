@@ -32,7 +32,7 @@ export class Server {
      *
     */
 
-    public static boostrap() : Server {
+    public static bootstrap() : Server {
         return new Server();
     }
 
