@@ -1,0 +1,1 @@
+## Simulation appilication for valuing trust in social networks
