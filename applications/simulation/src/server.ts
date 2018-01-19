@@ -1,7 +1,7 @@
 /**
-    @file: server.ts
-    @author: Xiao Ling <lingxiao@seas.upenn.edu>
-    @date: 1/19/2018
+    @file   : server.ts
+    @author : Xiao Ling <lingxiao@seas.upenn.edu>
+    @date   : 1/19/2018
 */
 import * as bodyParser   from "body-parser";
 import * as cookieParser from "cookie-parser";
@@ -10,6 +10,8 @@ import * as logger       from "morgan" ;
 import * as path         from "path"   ;
 import errorHandler   = require("errorhandler")   ;
 import methodOverride = require("method-override");
+
+import { IndexRoute } from '../routes/index';
 
 
 /**
@@ -49,7 +51,6 @@ export class Server {
         // this.routes();
         // this.api();
     }
-
 
     /**
      * configure the app
@@ -98,7 +99,6 @@ export class Server {
         this.app.use(errorHandler());
     }
 
-
     /**
      * create REST API routes
      * 
@@ -109,9 +109,6 @@ export class Server {
     */
     // public api() {}
 
-
-
-
     /**
      * create router
      * 
@@ -120,7 +117,23 @@ export class Server {
      * @todo: implement this
      *
     */
-    // public routes(){}
+    // private routes(){
+    //     let router : express.Router;
+    //     router = express.Router();
+    //     // index route
+    //     IndexRoute.create(router);
+    // }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
