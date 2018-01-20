@@ -63,3 +63,4 @@ typings/
 # simulation
 .DS_Store
 ./data
+./lib/sigma.js/*
