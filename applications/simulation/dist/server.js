@@ -18,16 +18,12 @@ class Server {
     }
     config() {
         this.app.use(express.static(path.join(__dirname, "public")));
-        console.log("static file paths: ", path.join(__dirname, "public"));
-        console.log("------------------\n");
         this.app.set("views", path.join(__dirname, "views"));
         this.app.set("view engine", "pug");
         console.log("debug config: ", __dirname, path.join(__dirname, "views"));
         this.app.use(logger("dev"));
         this.app.use(bodyParser.json());
-        this.app.use(bodyParser.urlencoded({
-            extended: true
-        }));
+        this.app.use(bodyParser.urlencoded({ extended: true }));
         this.app.use(cookieParser("SECRETE_CODE"));
         this.app.use(methodOverride());
         this.app.use(function (err, req, res, next) {
