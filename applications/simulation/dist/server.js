@@ -15,12 +15,14 @@ class Server {
     constructor() {
         this.app = express();
         this.config();
-        this.app.use('/', index_1.default);
     }
     config() {
         this.app.use(express.static(path.join(__dirname, "public")));
+        console.log("static file paths: ", path.join(__dirname, "public"));
+        console.log("------------------\n");
         this.app.set("views", path.join(__dirname, "views"));
         this.app.set("view engine", "pug");
+        console.log("debug config: ", __dirname, path.join(__dirname, "views"));
         this.app.use(logger("dev"));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({
@@ -33,6 +35,7 @@ class Server {
             next(err);
         });
         this.app.use(errorHandler());
+        this.app.use('/', index_1.default);
     }
 }
 exports.Server = Server;

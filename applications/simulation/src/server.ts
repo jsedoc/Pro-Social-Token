@@ -44,11 +44,9 @@ export class Server {
     */
     constructor(){
 
+        // initialize the application and configure it
         this.app = express();
-
-        // configure the application
         this.config();
-        this.app.use('/', index);
         // this.api();
     }
 
@@ -68,6 +66,11 @@ export class Server {
         this.app.set("views", path.join(__dirname, "views"));
         this.app.set("view engine", "pug");
 
+        // dirname = path/to/simulation/dist
+        // problem right here: the directory is such that it looks for it in dist, not src solution?
+        // solution: just move it all in dist
+        console.log("debug config: ", __dirname, path.join(__dirname, "views"))
+
         // use logger middlware
         this.app.use(logger("dev"));
 
@@ -75,9 +78,7 @@ export class Server {
         this.app.use(bodyParser.json());
 
         // use query string parser middlware
-        this.app.use(bodyParser.urlencoded({
-            extended : true
-        }));
+        this.app.use(bodyParser.urlencoded({ extended: true }));
 
         // use cookie parser middleware
         this.app.use(cookieParser("SECRETE_CODE"))
@@ -97,6 +98,10 @@ export class Server {
 
         // error handling
         this.app.use(errorHandler());
+
+        // set router
+        this.app.use('/', index);
+
     }
 
 
