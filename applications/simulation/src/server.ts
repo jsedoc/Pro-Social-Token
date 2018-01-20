@@ -49,7 +49,6 @@ export class Server {
         // configure the application
         this.config();
         this.app.use('/', index);
-
         // this.api();
     }
 
@@ -99,6 +98,8 @@ export class Server {
         // error handling
         this.app.use(errorHandler());
     }
+
+
 
     /**
      * create REST API routes

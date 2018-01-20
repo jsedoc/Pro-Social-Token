@@ -16,10 +16,9 @@ index.get('/', (req, res, next) => {
 
 });
 
-index.get('/sigmajs-example', (req, res, next) => {
+index.get('/graph', (req, res, next) => {
 
-	res.send("hello world from graph")
-	console.log("navigated to graph page")
+	res.sendFile("/Users/lingxiao/Documents/Projects/Pro-Social-Token/applications/simulation/src/views/sigmajs-example.html")
 
 });
 
