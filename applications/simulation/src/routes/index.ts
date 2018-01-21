@@ -19,8 +19,10 @@ index.get('/', (req, res, next) => {
 	@page: a simple graph from sigma.js example
 */
 index.get('/graph-simple', (req, res, next) => {
-	res.render('graph-simple', {title: 'graph-simple', message: 'a simple graph'})
+	// res.render('graph-simple', {title: 'graph-simple', message: 'a simple graph'})
+	res.sendFile('/Users/lingxiao/Documents/Projects/Pro-Social-Token/applications/simulation/dist/views/graph-simple.html');
 });
+
 
 export default index;
 

@@ -66,11 +66,6 @@ export class Server {
         this.app.set("views", path.join(__dirname, "views"));
         this.app.set("view engine", "pug");
 
-        // dirname = path/to/simulation/dist
-        // problem right here: the directory is such that it looks for it in dist, not src solution?
-        // solution: just move it all in dist
-        console.log("debug config: ", __dirname, path.join(__dirname, "views"))
-
         // use logger middlware
         this.app.use(logger("dev"));
 
