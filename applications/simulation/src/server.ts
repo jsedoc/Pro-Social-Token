@@ -51,7 +51,7 @@ export class Server {
     }
 
     /**
-     * configure the app
+     * configure the app with approrpriate middle ware + routes
      * 
      * @class Server
      * @method config
@@ -96,9 +96,7 @@ export class Server {
 
         // set router
         this.app.use('/', index);
-
     }
-
 
 
     /**
@@ -109,7 +107,7 @@ export class Server {
      * @todo: implement this
      *
     */
-    // public api() {}
+    public api() {}
 
 
 }

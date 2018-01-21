@@ -7,6 +7,6 @@ index.get('/', (req, res, next) => {
     console.log("navigated to home page");
 });
 index.get('/graph-simple', (req, res, next) => {
-    res.render('graph-simple', { title: 'graph-simple', message: 'a simple graph' });
+    res.sendFile('/Users/lingxiao/Documents/Projects/Pro-Social-Token/applications/simulation/dist/views/graph-simple.html');
 });
 exports.default = index;

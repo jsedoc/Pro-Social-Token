@@ -26,29 +26,33 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "browserify": "^15.2.0",
     "cookie-parser": "^1.4.3",
     "errorhandler": "^1.5.0",
     "express": "^4.16.2",
     "grunt": "^1.0.1",
     "method-override": "^2.3.10",
+    "mongoose": "^5.0.1",
     "morgan": "^1.9.0",
     "pug": "^2.0.0-rc.4",
     "sigma": "^1.2.1",
     "socket.io": "^2.0.4"
-    },
+  },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
     "@types/cookie-parser": "^1.4.1",
     "@types/errorhandler": "0.0.32",
     "@types/method-override": "0.0.31",
+    "@types/mongodb": "^3.0.3",
+    "@types/mongoose": "^4.7.33",
     "@types/morgan": "^1.7.35",
     "@types/socket.io": "^1.4.31",
+    "browserfy": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.17",
     "nodemon": "^1.14.11",
+    "tsify": "^3.0.4",
     "typescript": "^2.6.2"
   }
 }
-
-

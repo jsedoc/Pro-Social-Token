@@ -20,7 +20,6 @@ class Server {
         this.app.use(express.static(path.join(__dirname, "public")));
         this.app.set("views", path.join(__dirname, "views"));
         this.app.set("view engine", "pug");
-        console.log("debug config: ", __dirname, path.join(__dirname, "views"));
         this.app.use(logger("dev"));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: true }));
@@ -33,5 +32,6 @@ class Server {
         this.app.use(errorHandler());
         this.app.use('/', index_1.default);
     }
+    api() { }
 }
 exports.Server = Server;
