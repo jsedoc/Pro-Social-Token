@@ -8,6 +8,6 @@ index.get('/op-index-2', (req, res, next) => { res.sendFile(path + '/Site/op-ind
 index.get('/op-index-3', (req, res, next) => { res.sendFile(path + '/Site/op-index-3.html'); });
 index.get('/op-index-4', (req, res, next) => { res.sendFile(path + '/Site/op-index-4.html'); });
 index.get('/op-index-5', (req, res, next) => { res.sendFile(path + '/Site/op-index-5.html'); });
+index.get('/candidate-0', (req, res, next) => { res.sendFile(path + '/Homepage/candidate-0.html'); });
 index.get('/candidate-1', (req, res, next) => { res.sendFile(path + '/Homepage/candidate-1.html'); });
-index.get('/candidate-2', (req, res, next) => { res.sendFile(path + '/Homepage/candidate-2.html'); });
 exports.default = index;
