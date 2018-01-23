@@ -1,7 +1,7 @@
 {
   "name": "home-page",
   "version": "0.0.1",
-  "description": "Splash page for pro social cryto currency",
+  "description": "Splash page for pro-social cryto-currency",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lingxiao/Bitcoin.git"
+    "url": ""
   },
   "keywords": [
     "cryptocurrency",
@@ -24,9 +24,9 @@
   "author": "Xiao Ling",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lingxiao/Bitcoin/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/lingxiao/Bitcoin#readme",
+  "homepage": "",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
