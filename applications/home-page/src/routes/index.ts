@@ -26,7 +26,6 @@ index.get('/candidate-0', (req, res, next) => { res.sendFile(path + '/Homepage/c
 index.get('/candidate-1', (req, res, next) => { res.sendFile(path + '/Homepage/candidate-1.html'); });
 
 
-
 export default index;
 
  
