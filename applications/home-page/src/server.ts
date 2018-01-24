@@ -1,7 +1,7 @@
 /**
     @file   : server.ts
     @author : Xiao Ling <lingxiao@seas.upenn.edu>
-    @date   : 1/19/2018
+    @date   : 1/23/2018
 */
 import * as bodyParser   from "body-parser";
 import * as cookieParser from "cookie-parser";
@@ -61,20 +61,17 @@ export class Server {
 
         // add all static paths
         this.app.use(express.static(path.join(__dirname, "public")));
-        console.log("public: ", path.join(__dirname, 'public'))
 
         // configure pug
         this.app.set("views", path.join(__dirname, "public"));
         this.app.set("view engine", "pug");
-
-        console.log("public: ", path.join(__dirname, "views"))
 
         // use logger middlware
         this.app.use(logger("dev"));
 
         // use json form parser middleware
         this.app.use(bodyParser.json());
-
+     
         // use query string parser middlware
         this.app.use(bodyParser.urlencoded({ extended: true }));
 
