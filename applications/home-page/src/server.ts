@@ -59,7 +59,11 @@ export class Server {
     */
     public config() {
 
-        // add all static paths
+        /**
+            add static path
+            note this will move path/to/project/public 
+            directory into path/to/project/dist/public directory            
+        */
         this.app.use(express.static(path.join(__dirname, "public")));
 
         // configure pug
@@ -78,7 +82,7 @@ export class Server {
         // use cookie parser middleware
         this.app.use(cookieParser("SECRETE_CODE"))
 
-        // use overide middleware
+        // use overide middleware 
         this.app.use(methodOverride());
 
         // catch 404 and forward to handler
