@@ -19,8 +19,9 @@ class Server {
     config() {
         this.app.use(express.static(path.join(__dirname, "public")));
         console.log("public: ", path.join(__dirname, 'public'));
-        this.app.set("views", path.join(__dirname, "views"));
+        this.app.set("views", path.join(__dirname, "public"));
         this.app.set("view engine", "pug");
+        console.log("public: ", path.join(__dirname, "views"));
         this.app.use(logger("dev"));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: true }));

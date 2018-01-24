@@ -64,8 +64,10 @@ export class Server {
         console.log("public: ", path.join(__dirname, 'public'))
 
         // configure pug
-        this.app.set("views", path.join(__dirname, "views"));
+        this.app.set("views", path.join(__dirname, "public"));
         this.app.set("view engine", "pug");
+
+        console.log("public: ", path.join(__dirname, "views"))
 
         // use logger middlware
         this.app.use(logger("dev"));
