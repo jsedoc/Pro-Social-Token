@@ -37,4 +37,3 @@ index.get('/candidate-1', (req, res, next) => {
 export default index;
 
 
-
