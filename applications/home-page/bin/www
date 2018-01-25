@@ -22,25 +22,12 @@ var server = http.Server(app);
 
 
 /**
-  run a barebones app here to figure out what's going on
-  ok so this part works... now do this: 
+  home page for google app engine debugging
+  remove in production
 */
 app.get('/', (req,res) => {
   res.status(200).send("hello world from my app!")
 })
-
-
-/**
-  this should get serviced, so it is serviced here ... but not elsewhere
-*/
-// var html_rel_dir = "../public/bootstrap/Homepage/"
-// app.get('/candidate-10', (req, res, next) => { 
-//   var path_to_html = path.join(__dirname, html_rel_dir, 'candidate-1.html');
-//   console.log(__dirname)
-//   res.sendFile( path_to_html );
-// });
-
-
 
 
 // start listening on port `httpPort`
