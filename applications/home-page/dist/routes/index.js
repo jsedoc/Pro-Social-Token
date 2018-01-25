@@ -11,4 +11,7 @@ index.get('/candidate-1', (req, res, next) => {
     var path_to_html = path.join(__dirname, html_rel_dir, 'candidate-1.html');
     res.sendFile(path_to_html);
 });
+index.get('/pug', (req, res, next) => {
+    res.render('candidate-1', {});
+});
 exports.default = index;

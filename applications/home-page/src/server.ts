@@ -70,6 +70,7 @@ export class Server {
         this.app.set("views", path.join(__dirname, "public"));
         this.app.set("view engine", "pug");
 
+
         // use logger middlware
         this.app.use(logger("dev"));
 
