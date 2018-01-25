@@ -1,101 +1,56 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    title FOUNDATION
-    // Favicons
-    link(rel='shortcut icon', href='bootstrap/assets/images/favicon.png')
-    link(rel='apple-touch-icon', href='bootstrap/assets/images/apple-touch-icon.png')
-    link(rel='apple-touch-icon', sizes='72x72', href='bootstrap/assets/images/apple-touch-icon-72x72.png')
-    link(rel='apple-touch-icon', sizes='114x114', href='bootstrap/assets/images/apple-touch-icon-114x114.png')
-    // Bootstrap core CSS
-    link(href='bootstrap/assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
-    // Plugins
-    link(href='bootstrap/assets/css/font-awesome.min.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/et-line-font.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/simpletextrotator.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/magnific-popup.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/owl.carousel.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/superslides.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/vertical.css', rel='stylesheet')
-    link(href='bootstrap/assets/css/animate.css', rel='stylesheet')
-    // Template core CSS
-    link(href='bootstrap/assets/css/style.css', rel='stylesheet')
+
+
+  include includes/head.pug
+
+
   body
-    // PRELOADER
+
+    //- PRELOADER
     .page-loader
       .loader Loading...
-    // /PRELOADER
-    // WRAPPER
+    //- /PRELOADER
+
+    //- WEBSITE WRAPPER
     .wrapper
-      // NAVIGATION
-      nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            // YOU LOGO HERE
-            a.navbar-brand(href='index.html')
-              // IMAGE OR SIMPLE TEXT
-              img.dark-logo(src='bootstrap/assets/images/site-logo.png', width='95', alt='')
-              img.light-logo(src='bootstrap/assets/images/site-logo-light.png', width='95', alt='')
-          #custom-collapse.collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a.section-scroll(href='#hero') Home
-              li
-                a.section-scroll(href='#about') About
-              li
-                a.section-scroll(href='#services') Services
-              li
-                a.section-scroll(href='#portfolio') Portfolio
-              li
-                a.section-scroll(href='#features') Features
-              li
-                a.section-scroll(href='#shop') team
-              li
-                a.section-scroll(href='#news') News
-              li
-                a.section-scroll(href='#contact') Contact
-              li
-                a.toggle-menu.menu-top.push-body(href='#')
-                  i.fa.fa-search
-      // /NAVIGATION
-      // HERO
+
+
+      include includes/navbar.pug
+
+      //- include includes/video.pug
+
+      //- HERO
       section#hero.module-hero.module-video.module-full-height.bg-dark-30(data-background='bootstrap/assets/images/section-11.jpg')
-        // HERO TEXT
+        //- HERO TEXT
         .hero-caption
           .hero-text
-            // HERO TEXT
+            //- HERO TEXT
             .hero-caption
               .hero-text
-                //- h5.mh-line-size-4.font-alt.m-b-50 Simple & Powerful
+                //-- h5.mh-line-size-4.font-alt.m-b-50 Simple & Powerful
                 h1.mh-line-size-1.font-alt.m-b-60 FOUNDATION
                 h5.mh-line-size-5.font-alt.m-b-50 A Pro Social Cryptocurrency
-            // /HERO TEXT
-        // /HERO TEXT
-        // YOUTUBE VIDEO
-        .video-player(data-property="{videoURL:'https://www.youtube.com/watch?v=EMy5krGcoOU', containment:'.module-video', quality:'large', startAt:0, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:0, mute:true}")
-        // /YOUTUBE VIDEO
-      // /HERO
-      // ABOUT
+            //- /HERO TEXT
+        //- /HERO TEXT
+        //- YOUTUBE VIDEO - problem: video is not playing
+        .video-player(data-property="{videoURL:'https://-www.youtube.com/watch?v=EMy5krGcoOU', containment:'.module-video', quality:'large', startAt:0, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:0, mute:true}")
+        //- /YOUTUBE VIDEO
+      //- /HERO
+
+
+      //- ABOUT
       section#about.module
         .container
-          // MODULE TITLE
+          //- MODULE TITLE
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt About Studio
               .module-subtitle.font-serif
                 | We’re an award winning London based digital agency, lovingly curating pixels for maximum impact. We don’t have a style — we have standards.
-          // /MODULE TITLE
+          //- /MODULE TITLE
           .row
-            // ABOUT STUDIO
+            //- ABOUT STUDIO
             .col-sm-6
               h5.font-alt.m-t-0.m-b-20 We're creative
               p
@@ -104,8 +59,8 @@ html(lang='en')
                 | To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce
               p
                 a(href='about.html') More About →
-            // /ABOUT STUDIO
-            // SKILLS
+            //- /ABOUT STUDIO
+            //- SKILLS
             .col-sm-6
               h6.progress-title.font-alt Development
               .progress
@@ -123,18 +78,18 @@ html(lang='en')
               .progress
                 .progress-bar.pb-dark(aria-valuenow='90', role='progressbar', aria-valuemin='0', aria-valuemax='100')
                   span.font-alt
-            // /SKILLS
-      // /ABOUT
-      // SERVICES
+            //- /SKILLS
+      //- /ABOUT
+      //- SERVICES
       section#services.module
         .container
-          // MODULE TITLE
+          //- MODULE TITLE
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Services
-          // /MODULE TITLE
+          //- /MODULE TITLE
           .row.multi-columns-row
-            // CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -142,8 +97,8 @@ html(lang='en')
                 h5.content-box-title.font-alt Designs & interfaces
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-            // CONTENT BOX
+            //- /CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -151,8 +106,8 @@ html(lang='en')
                 h5.content-box-title.font-alt Highly customizable
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-            // CONTENT BOX
+            //- /CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -160,8 +115,8 @@ html(lang='en')
                 h5.content-box-title.font-alt Responsive design
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-            // CONTENT BOX
+            //- /CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -169,8 +124,8 @@ html(lang='en')
                 h5.content-box-title.font-alt Features & plugins
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-            // CONTENT BOX
+            //- /CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -178,8 +133,8 @@ html(lang='en')
                 h5.content-box-title.font-alt Optimised for speed
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-            // CONTENT BOX
+            //- /CONTENT BOX
+            //- CONTENT BOX
             .col-sm-6.col-md-4.col-lg-4
               .content-box
                 .content-box-icon
@@ -187,19 +142,19 @@ html(lang='en')
                 h5.content-box-title.font-alt Dedicated support
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
-            // /CONTENT BOX
-      // /SERVICES
+            //- /CONTENT BOX
+      //- /SERVICES
       hr.divider
-      // DIVIDER
-      // PORTFOLIO
+      //- DIVIDER
+      //- PORTFOLIO
       section#portfolio.module
         .container
-          // MODULE TITLE
+          //- MODULE TITLE
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Our Works
-          // /MODULE TITLE
-          // FILTER
+          //- /MODULE TITLE
+          //- FILTER
           .row
             .col-sm-12
               ul#filters.filters.font-alt
@@ -213,13 +168,13 @@ html(lang='en')
                   a(href='#', data-filter='.photo') Photo
                 li
                   a(href='#', data-filter='.web') Web
-          // /FILTER
-          // WORKS GRID
+          //- /FILTER
+          //- WORKS GRID
           .works-grid-wrapper
             #works-grid.works-grid.works-hover-w
-              // DO NOT DELETE THIS DIV
+              //- DO NOT DELETE THIS DIV
               .grid-sizer
-              // PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.tall.branding
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-1.jpg', alt='')
@@ -227,8 +182,8 @@ html(lang='en')
                     h3.work-title The European languages
                     .work-descr
                       | Branding
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.design
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-2.jpg', alt='')
@@ -236,8 +191,8 @@ html(lang='en')
                     h3.work-title The languages only
                     .work-descr
                       | Design
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.design
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-3.jpg', alt='')
@@ -245,8 +200,8 @@ html(lang='en')
                     h3.work-title Everyone realizes
                     .work-descr
                       | Design
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.design
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-4.jpg', alt='')
@@ -254,8 +209,8 @@ html(lang='en')
                     h3.work-title Corporate Identity
                     .work-descr
                       | Design
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.design
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-5.jpg', alt='')
@@ -263,8 +218,8 @@ html(lang='en')
                     h3.work-title Cambridge friend
                     .work-descr
                       | Design
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.wide-tall.branding.photo.web
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-6.jpg', alt='')
@@ -272,8 +227,8 @@ html(lang='en')
                     h3.work-title The grammar of the resulting language
                     .work-descr
                       | Branding / Photo / Web
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.wide.design.photo.web
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-7.jpg', alt='')
@@ -281,8 +236,8 @@ html(lang='en')
                     h3.work-title A collection of textile samples
                     .work-descr
                       | Design / Photo / Web
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.branding.photo
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-8.jpg', alt='')
@@ -290,8 +245,8 @@ html(lang='en')
                     h3.work-title Gregor then turned
                     .work-descr
                       | Branding / Photo
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.branding.photo
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-9.jpg', alt='')
@@ -299,8 +254,8 @@ html(lang='en')
                     h3.work-title He must have tried it
                     .work-descr
                       | Branding / Photo
-              // /PORTFOLIO ITEM
-              // PORTFOLIO ITEM
+              //- /PORTFOLIO ITEM
+              //- PORTFOLIO ITEM
               .work-item.wide.design.web
                 a(href='portfolio-single-1.html')
                   img(src='bootstrap/assets/images/portfolio/img-10.jpg', alt='')
@@ -308,141 +263,141 @@ html(lang='en')
                     h3.work-title However hard he threw himself
                     .work-descr
                       | Design / Web
-              // /PORTFOLIO ITEM
-          // /WORKS GRID
-          // SHOW MORE
+              //- /PORTFOLIO ITEM
+          //- /WORKS GRID
+          //- SHOW MORE
           .row.m-t-70.text-center
             .col-sm-12
               button#show-more.btn.btn-round.btn-b More works
-          // /SHOW MORE
-      // /PORTFOLIO
-      // TESTIMONIALS
+          //- /SHOW MORE
+      //- /PORTFOLIO
+      //- TESTIMONIALS
       section.module.module-parallax.bg-light-60(data-background='bootstrap/assets/images/section-2.jpg')
         .container
           .row
             .col-sm-6.col-sm-offset-3
-              // TESTIMONIALS CAROUSEL
+              //- TESTIMONIALS CAROUSEL
               .owl-carousel.slider-testimonials.text-center
-                // SLIDE 1
+                //- SLIDE 1
                 .item
                   h5.module-icon.m-b-20
                     span.icon-quote
                   .font-serif.m-b-20
                     | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .quote-author.font-alt Jack Woods / Somecompany inc.
-                // /SLIDE 1
-                // SLIDE 2
+                //- /SLIDE 1
+                //- SLIDE 2
                 .item
                   h5.module-icon.m-b-20
                     span.icon-quote
                   .font-serif.m-b-20
                     | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .quote-author.font-alt Jack Woods, Somecompany inc.
-                // /SLIDE 2
-                // SLIDE 3
+                //- /SLIDE 2
+                //- SLIDE 3
                 .item
                   h5.module-icon.m-b-20
                     span.icon-quote
                   .font-serif.m-b-20
                     | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .quote-author.font-alt Jack Woods, Somecompany inc.
-                // /SLIDE 3
-              // /TESTIMONIALS CAROUSEL
-      // /TESTIMONIALS
-      // ALT SERVICES
+                //- /SLIDE 3
+              //- /TESTIMONIALS CAROUSEL
+      //- /TESTIMONIALS
+      //- ALT SERVICES
       section#features.module
         .container
-          // MODULE TITLE
+          //- MODULE TITLE
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt Alt Services
-          // /MODULE TITLE
+          //- /MODULE TITLE
           .row
             .col-sm-6.col-md-3.col-lg-3
-              // ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-strategy
                 h6.alt-content-box-title.font-alt Branding
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-tools-2
                 h6.alt-content-box-title.font-alt Development
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-target
                 h6.alt-content-box-title.font-alt Marketing
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-tools
                 h6.alt-content-box-title.font-alt Design
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
+              //- /ALT CONTENT BOX
             .col-md-6.col-lg-6.hidden-xs.hidden-sm
               .alt-services-image.text-center
                 img(src='bootstrap/assets/images/promo.png', alt='')
             .col-sm-6.col-md-3.col-lg-3
-              // ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-camera
                 h6.alt-content-box-title.font-alt Photography
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-mobile
                 h6.alt-content-box-title.font-alt Mobile
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-linegraph
                 h6.alt-content-box-title.font-alt Video
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-              // ALT CONTENT BOX
+              //- /ALT CONTENT BOX
+              //- ALT CONTENT BOX
               .alt-content-box.m-t-50
                 .alt-content-box-icon
                   span.icon-layers
                 h6.alt-content-box-title.font-alt Modules
                 .content-box-text
                   | The European languages are members of the same family. Their separate existence is a myth.
-              // /ALT CONTENT BOX
-      // /ALT SERVICES
-      // CLIENTS
-      // Xiao Ling deleted this part
-      // /CLIENTS
+              //- /ALT CONTENT BOX
+      //- /ALT SERVICES
+      //- CLIENTS
+      //- Xiao Ling deleted this part
+      //- /CLIENTS
       hr.divider
-      // DIVIDER
-      // TEAM MEMBERS
+      //- DIVIDER
+      //- TEAM MEMBERS
       section#shop.module-small
         .container
-          // MODULE TITLE
+          //- MODULE TITLE
           .row
             .col-sm-6.col-sm-offset-3
               h2.module-title.font-alt TEAM
-          // /MODULE TITLE
+          //- /MODULE TITLE
           .row.multi-columns-row
-            // TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -452,8 +407,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Accessories Pack
                 | 							£9.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -463,8 +418,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Men’s Casual Pack
                 | 							£12.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -474,8 +429,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Men’s Garb
                 | 							£6.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -485,8 +440,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Cold Garb
                 | 							£14.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -496,8 +451,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Cold Garb
                 | 							£14.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -507,8 +462,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Cold Garb
                 | 							£14.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -518,8 +473,8 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Cold Garb
                 | 							£14.00
-            // /TEAM MEMBER
-            // TEAM MEMBER
+            //- /TEAM MEMBER
+            //- TEAM MEMBER
             .col-sm-6.col-md-3.col-lg-3
               .shop-item
                 .shop-item-image
@@ -529,25 +484,25 @@ html(lang='en')
                 h5.shop-item-title.font-alt
                   a(href='#') Cold Garb
                 | 							£14.00
-            // /TEAM MEMBER
-          //
+            //- /TEAM MEMBER
+          //-
             <div class="row m-t-30">
             <div class="col-sm-12 text-center">
             <a href="shop-grid-col-3.html" class="btn btn-b btn-round">See all products</a>
             </div>
             </div>
         hr.divider
-        // DIVIDER
-        // ADVISORS
+        //- DIVIDER
+        //- ADVISORS
         section#shop.module-small
           .container
-            // MODULE TITLE
+            //- MODULE TITLE
             .row
               .col-sm-6.col-sm-offset-3
                 h2.module-title.font-alt ADVISORS
-            // /MODULE TITLE
+            //- /MODULE TITLE
             .row.multi-columns-row
-              // ADVISOR
+              //- ADVISOR
               .col-sm-6.col-md-3.col-lg-3
                 .shop-item
                   .shop-item-image
@@ -557,8 +512,8 @@ html(lang='en')
                   h5.shop-item-title.font-alt
                     a(href='#') Accessories Pack
                   | 							£9.00
-              // /ADVISOR
-              // ADVISOR
+              //- /ADVISOR
+              //- ADVISOR
               .col-sm-6.col-md-3.col-lg-3
                 .shop-item
                   .shop-item-image
@@ -568,8 +523,8 @@ html(lang='en')
                   h5.shop-item-title.font-alt
                     a(href='#') Men’s Casual Pack
                   | 							£12.00
-              // /ADVISOR
-              // ADVISOR
+              //- /ADVISOR
+              //- ADVISOR
               .col-sm-6.col-md-3.col-lg-3
                 .shop-item
                   .shop-item-image
@@ -579,8 +534,8 @@ html(lang='en')
                   h5.shop-item-title.font-alt
                     a(href='#') Men’s Garb
                   | 							£6.00
-              // /ADVISOR
-              // ADVISOR
+              //- /ADVISOR
+              //- ADVISOR
               .col-sm-6.col-md-3.col-lg-3
                 .shop-item
                   .shop-item-image
@@ -590,26 +545,26 @@ html(lang='en')
                   h5.shop-item-title.font-alt
                     a(href='#') Cold Garb
                   | 							£14.00
-              // /ADVISOR
-            //
+              //- /ADVISOR
+            //-
               <div class="row m-t-30">
               <div class="col-sm-12 text-center">
               <a href="shop-grid-col-3.html" class="btn btn-b btn-round">See all products</a>
               </div>
               </div>
-        // /LATEST PRODUCTS
+        //- /LATEST PRODUCTS
         hr.divider
-        // DIVIDER
-        // BLOG 3 COLUMN
+        //- DIVIDER
+        //- BLOG 3 COLUMN
         section#news.module
           .container
-            // MODULE TITLE
+            //- MODULE TITLE
             .row
               .col-sm-6.col-sm-offset-3
                 h2.module-title.font-alt Latest blog posts
-            // /MODULE TITLE
+            //- /MODULE TITLE
             .row.multi-columns-row
-              // POST
+              //- POST
               .col-sm-6.col-md-4.col-lg-4.m-b-60
                 .post
                   .post-media
@@ -627,8 +582,8 @@ html(lang='en')
                       | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .post-more-link.font-alt
                     a(href='blog-single.html') Read more
-              // /POST
-              // POST
+              //- /POST
+              //- POST
               .col-sm-6.col-md-4.col-lg-4.m-b-60
                 .post
                   .post-media
@@ -646,8 +601,8 @@ html(lang='en')
                       | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .post-more-link.font-alt
                     a(href='blog-single.html') Read more
-              // /POST
-              // POST
+              //- /POST
+              //- POST
               .col-sm-6.col-md-4.col-lg-4.m-b-60
                 .post
                   .post-media
@@ -665,17 +620,17 @@ html(lang='en')
                       | The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
                   .post-more-link.font-alt
                     a(href='blog-single.html') Read more
-              // /POST
-        // BLOG 3 COLUMN
+              //- /POST
+        //- BLOG 3 COLUMN
         hr.divider
-        // DIVIDER
-        // GOOGLE MAP
+        //- DIVIDER
+        //- GOOGLE MAP
         section#module-maps
           #map
-        // /GOOGLE MAP
+        //- /GOOGLE MAP
         hr.divider
-        // DIVIDER
-        // CONTACT
+        //- DIVIDER
+        //- CONTACT
         section#contact.module
           .container
             .row
@@ -697,10 +652,10 @@ html(lang='en')
                     p.help-block.text-danger
                   .text-center
                     button.btn.btn-block.btn-round.btn-d(type='submit') Submit
-                // Ajax response
+                //- Ajax response
                 #contact-response.ajax-response.font-alt
               .col-sm-4
-                // ALT CONTENT BOX
+                //- ALT CONTENT BOX
                 .alt-content-box.m-t-0.m-t-sm-30
                   .alt-content-box-icon
                     span.icon-envelope
@@ -709,8 +664,8 @@ html(lang='en')
                   | 							Email: somecompany@example.com
                   br
                   | 							Phone: +1 234 567 89 10
-                // /ALT CONTENT BOX
-                // ALT CONTENT BOX
+                //- /ALT CONTENT BOX
+                //- ALT CONTENT BOX
                 .alt-content-box
                   .alt-content-box-icon
                     span.icon-map
@@ -722,14 +677,14 @@ html(lang='en')
                   br
                   br
                   a.section-scroll(href='#module-maps') Find us on map →
-                // /ALT CONTENT BOX
-        // /CONTACT
-        // FOOTER
+                //- /ALT CONTENT BOX
+        //- /CONTACT
+        //- FOOTER
         section.module-small.bg-light
           .container
             .row
               .col-sm-3
-                // IMAGE OR SIMPLE TEXT
+                //- IMAGE OR SIMPLE TEXT
                 img(src='bootstrap/assets/images/site-logo.png', alt='')
             .row.m-t-40
               .col-sm-3
@@ -758,13 +713,13 @@ html(lang='en')
                 h5.font-alt.m-t-0.m-b-20 Follow us
                 ul.list-unstyled
                   li
-                    a(href='https://twitter.com/') Twitter
+                    a(href='https://-twitter.com/') Twitter
                   li
-                    a(href='https://www.facebook.com/') Facebook
+                    a(href='https://-www.facebook.com/') Facebook
                   li
-                    a(href='https://dribbble.com/') Dribbble
+                    a(href='https://-dribbble.com/') Dribbble
         hr.divider
-        // DIVIDER
+        //- DIVIDER
         footer.module-small.bg-light.p-t-30.p-b-30
           .container
             .col-sm-12
@@ -772,13 +727,13 @@ html(lang='en')
                 | © 2018 
                 a(href='#') Organization Name
                 | , All Rights Reserved.
-        // /FOOTER
-    // /WRAPPER
-    // SCROLLTOP
+        //- /FOOTER
+    //- /WRAPPER
+    //- SCROLLTOP
     .scroll-up
       a(href='#totop')
         i.fa.fa-angle-double-up
-    // Javascript files
+    //- Javascript files
     script(src='bootstrap/assets/js/jquery-2.1.3.min.js')
     script(src='bootstrap/assets/bootstrap/js/bootstrap.min.js')
     script(src='bootstrap/assets/js/jquery.superslides.min.js')
@@ -796,7 +751,7 @@ html(lang='en')
     script(src='bootstrap/assets/js/jquery.fitvids.js')
     script(src='bootstrap/assets/js/jquery.parallax-1.1.3.js')
     script(src='bootstrap/assets/js/smoothscroll.js')
-    script(src='http://maps.google.com/maps/api/js?sensor=true')
+    script(src='http://-maps.google.com/maps/api/js?sensor=true')
     script(src='bootstrap/assets/js/gmaps.js')
     script(src='bootstrap/assets/js/contact.js')
     script(src='bootstrap/assets/js/custom.js')

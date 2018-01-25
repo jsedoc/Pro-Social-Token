@@ -15,17 +15,17 @@ const index: Router = Router();
 /**
 	Raw bootstrap template 
 */
-index.get('/candidate-0', (req, res, next) => {
+index.get('/candidate-1', (req, res, next) => {
 	const html_rel_dir: string = "../../public/bootstrap/Homepage/"
-	res.sendFile( path.join(__dirname, html_rel_dir, 'candidate-0.html') );
+	res.sendFile( path.join(__dirname, html_rel_dir, 'candidate-1.html') );
 });
 
 
 /**
 	Template under development
 */
-index.get('/candidate-1', (req, res, next) => { 
-	res.render('candidate-1', {});
+index.get('/homepage', (req, res, next) => { 
+	res.render('homepage', {});
 });
 
 
