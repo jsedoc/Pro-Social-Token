@@ -26,7 +26,6 @@ index.get('/candidate-1', (req, res, next) => {
 */
 index.get('/homepage', (req, res, next) => { 
 	res.render('homepage', {});
-	console.log("navigated to homepage...")
 });
 
 
