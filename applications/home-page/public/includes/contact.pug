@@ -1,0 +1,48 @@
+//- CONTACT
+section#contact.module
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        h2.module-title.font-alt Sign Up
+    .row
+      .col-sm-6.col-sm-offset-1
+        form#contact-form(role='form', novalidate='')
+          .form-group
+            label.sr-only(for='cname') Name
+            input#cname.form-control(type='text', name='cname', placeholder='Name*', required='', data-validation-required-message='Please enter your name.')
+            p.help-block.text-danger
+          .form-group
+            label.sr-only(for='cemail') Your Email
+            input#cemail.form-control(type='email', name='cemail', placeholder='Your E-mail*', required='', data-validation-required-message='Please enter your email address.')
+            p.help-block.text-danger
+          .form-group
+            textarea#cmessage.form-control(name='cmessage', rows='7', placeholder='Message*', required='', data-validation-required-message='Please enter your message.')
+            p.help-block.text-danger
+          .text-center
+            button.btn.btn-block.btn-round.btn-d(type='submit') Submit
+        //- Ajax response
+        #contact-response.ajax-response.font-alt
+      .col-sm-4
+        //- ALT CONTENT BOX
+        .alt-content-box.m-t-0.m-t-sm-30
+          .alt-content-box-icon
+            span.icon-envelope
+          h5.alt-content-box-title.font-alt
+            | Say Hello
+          |               Email: somecompany@example.com
+          br
+          |               Phone: +1 234 567 89 10
+        //- /ALT CONTENT BOX
+        //- ALT CONTENT BOX
+        .alt-content-box
+          .alt-content-box-icon
+            span.icon-map
+          h5.alt-content-box-title.font-alt
+            | Where to meet
+          |               Incanto Company,
+          br
+          |               23 Greate Street, Los Angeles, 12345 LS
+          br
+          br
+          a.section-scroll(href='#module-maps') Find us on map →
+        //- /ALT CONTENT BOX
