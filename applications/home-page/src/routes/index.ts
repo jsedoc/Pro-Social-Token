@@ -28,6 +28,9 @@ index.get('/homepage', (req, res, next) => {
 	res.render('homepage', {});
 });
 
+index.get('/debug', (req, res, next) => { 
+	res.send("debug page")
+});
 
 export default index;
 

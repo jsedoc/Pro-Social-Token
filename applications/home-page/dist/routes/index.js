@@ -10,4 +10,7 @@ index.get('/candidate-1', (req, res, next) => {
 index.get('/homepage', (req, res, next) => {
     res.render('homepage', {});
 });
+index.get('/debug', (req, res, next) => {
+    res.send("debug page");
+});
 exports.default = index;
