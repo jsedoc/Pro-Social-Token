@@ -1,0 +1,123 @@
+section#portfolio.module
+  .container
+    //- MODULE TITLE
+    .row
+      .col-sm-6.col-sm-offset-3
+        h2.module-title.font-alt Our Works
+    //- /MODULE TITLE
+    //- FILTER
+    .row
+      .col-sm-12
+        ul#filters.filters.font-alt
+          li
+            a.current(href='#', data-filter='*') All
+          li
+            a(href='#', data-filter='.branding') Branding
+          li
+            a(href='#', data-filter='.design') Design
+          li
+            a(href='#', data-filter='.photo') Photo
+          li
+            a(href='#', data-filter='.web') Web
+    //- /FILTER
+    //- WORKS GRID
+    .works-grid-wrapper
+      #works-grid.works-grid.works-hover-w
+        //- DO NOT DELETE THIS DIV
+        .grid-sizer
+        //- PORTFOLIO ITEM
+        .work-item.tall.branding
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-1.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title The European languages
+              .work-descr
+                | Branding
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.design
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-2.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title The languages only
+              .work-descr
+                | Design
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.design
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-3.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title Everyone realizes
+              .work-descr
+                | Design
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.design
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-4.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title Corporate Identity
+              .work-descr
+                | Design
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.design
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-5.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title Cambridge friend
+              .work-descr
+                | Design
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.wide-tall.branding.photo.web
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-6.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title The grammar of the resulting language
+              .work-descr
+                | Branding / Photo / Web
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.wide.design.photo.web
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-7.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title A collection of textile samples
+              .work-descr
+                | Design / Photo / Web
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.branding.photo
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-8.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title Gregor then turned
+              .work-descr
+                | Branding / Photo
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.branding.photo
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-9.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title He must have tried it
+              .work-descr
+                | Branding / Photo
+        //- /PORTFOLIO ITEM
+        //- PORTFOLIO ITEM
+        .work-item.wide.design.web
+          a(href='portfolio-single-1.html')
+            img(src='bootstrap/assets/images/portfolio/img-10.jpg', alt='')
+            .work-caption.font-alt
+              h3.work-title However hard he threw himself
+              .work-descr
+                | Design / Web
+        //- /PORTFOLIO ITEM
+    //- /WORKS GRID
+    //- SHOW MORE
+    .row.m-t-70.text-center
+      .col-sm-12
+        button#show-more.btn.btn-round.btn-b More works
+    //- /SHOW MORE
