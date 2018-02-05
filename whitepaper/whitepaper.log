@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 FEB 2018 19:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 FEB 2018 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,9 +83,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
  [3]) (./sections/Protocol.tex [4] [5] [6] [7]
-[8] [9] [10]) (./sections/Market.tex) (./sections/Monetization.tex [11])
-(./sections/Team.tex [12]) (./sections/Timeline.tex) (./sections/Offering.tex
-[13]) (./sections/Appendix.tex [14]) (./whitepaper.aux) ) 
+[8] [9] [10]) (./sections/Market.tex [11]) (./sections/Monetization.tex
+[12]) (./sections/Team.tex [13]) (./sections/Timeline.tex [14])
+(./sections/Offering.tex [15]) (./sections/Appendix.tex [16]) (./whitepaper.aux
+) ) 
 Here is how much of TeX's memory you used:
  417 strings out of 493014
  5142 string characters out of 6133351
@@ -94,14 +95,13 @@ Here is how much of TeX's memory you used:
  18119 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  22i,4n,24p,1058b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/20
-16/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb>
-Output written on whitepaper.pdf (15 pages, 49185 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/
+texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on whitepaper.pdf (17 pages, 49579 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
