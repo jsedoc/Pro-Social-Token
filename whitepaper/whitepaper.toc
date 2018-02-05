@@ -8,4 +8,5 @@
 \contentsline {section}{\numberline {5}\textbf {Opportunity for Monetization}}{11}
 \contentsline {section}{\numberline {6}\textbf {Team and Advisors}}{12}
 \contentsline {section}{\numberline {7}\textbf {Development Timeline}}{13}
-\contentsline {section}{\numberline {8}\textbf {Appendix}}{13}
+\contentsline {section}{\numberline {8}\textbf {Exempt Offering of Security}}{13}
+\contentsline {section}{\numberline {9}\textbf {Appendix}}{14}
