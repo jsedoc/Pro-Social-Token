@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 FEB 2018 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 FEB 2018 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -62,28 +62,46 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 LaTeX Warning: No \author given.
 
-(./sections/Introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
+(./whitepaper.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) [1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `whitepaper.toc'.
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./whit
-epaper.aux) ) 
+ (./sections/Introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+) (./sections/Protocol.tex
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5] [6] [7]) (./sections/Market.tex) (./sections/Monetization.tex)
+(./sections/Team.tex) (./sections/Timeline.tex) (./sections/Appendix.tex)
+[8] [9] (./whitepaper.aux) ) 
 Here is how much of TeX's memory you used:
- 363 strings out of 493014
- 4376 string characters out of 6133351
- 53601 words of memory out of 5000000
- 3967 multiletter control sequences out of 15000+600000
- 10661 words of font info for 26 fonts, out of 8000000 for 9000
+ 408 strings out of 493014
+ 4979 string characters out of 6133351
+ 56601 words of memory out of 5000000
+ 3983 multiletter control sequences out of 15000+600000
+ 16351 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,6n,21p,152b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</
-usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on whitepaper.pdf (1 page, 17907 bytes).
+ 22i,6n,24p,1058b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips
+/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on whitepaper.pdf (9 pages, 47608 bytes).
 PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
