@@ -67,7 +67,7 @@
 
 % Include your paper's title here
 
-\title{Pro-Social Cryptocurrency Protocol Proposal} 
+% \title{Counter-Coin: A Prosocial Cryptocurrency}
 
 
 % Place the author information here.  Please hand-code the contact
@@ -77,6 +77,7 @@
 % settings shown here.
 
 % \author
+% {Foundation}
 % {John Smith,$^{1\ast}$ Jane Doe,$^{1}$ Joe Scientist$^{2}$\\
 % \\
 % \normalsize{$^{1}$Department of Chemistry, University of Wherever,}\\
@@ -88,7 +89,8 @@
 
 % Include the date command, but leave its argument blank.
 
-\date{}
+% \date{\today}\newpage\newpage
+
 
 
 
@@ -102,9 +104,13 @@
 
 % Make the title.
 
-\maketitle 
+% \maketitle 
+
+\import{\sectiondir}{Title.tex}
 
 \tableofcontents
+\newpage
+
 
 % Place your abstract within the special {sciabstract} environment.
 
@@ -126,6 +132,7 @@
 
 % Whitepaper Proper
 
+\import{\sectiondir}{Executive-Summary.tex}
 \import{\sectiondir}{Introduction.tex}
 \import{\sectiondir}{Protocol.tex}
 \import{\sectiondir}{Market.tex}
